@@ -1,0 +1,32 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #000;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--colorNeon));
+  }
+  to {
+    filter: drop-shadow(0 0 5px var(--colorNeon));
+  }
+}
+.neon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: 900;
+}
+.neon span {
+  animation: neon 3s alternate infinite ease-in-out;
+}
+.neon__box {
+  color: yellow;
+  --colorNeon: yellow;
+}
+.neon__text {
+  color: tomato;
+  --colorNeon: red;
+}/*# sourceMappingURL=style.css.map */

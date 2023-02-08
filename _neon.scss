@@ -1,0 +1,36 @@
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--colorNeon));
+    }
+    to{
+        filter: drop-shadow(0 0 5px var(--colorNeon));
+    }
+}
+
+.neon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-weight: 900;
+
+    span{
+        animation: neon 3s alternate infinite ease-in-out;
+    }
+    
+
+    &__box{
+        color: yellow;
+        --colorNeon: yellow;
+
+    }
+
+    &__text{
+        color: tomato;
+        --colorNeon: red;
+        
+    }
+}
+
+
